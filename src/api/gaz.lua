@@ -133,16 +133,16 @@ function drawTank(window, tankName, x, y, color, maxLiq, currentLiq)
           else
             drawPixel(window, x + j, y + i, colors.red)
           end
-        elseif tankName == "fluid_xp_juice_still" then
+        elseif tankName == "mob_grinding_utils:fluid_xp" then
           drawPixel(window, x + j, y + i, colors.lime)
         else
-          drawPixel(window, x + j, y + i, color.white)
+          drawPixel(window, x + j, y + i, colors.green)
         end
       end
     end
   end
 
-  if tankName == "fluid_xp_juice_still" then
+  if tankName == "mob_grinding_utils:fluid_xp" then
     tankName = "Liquid XP"
     window.setCursorPos(x, y + 10)
     window.setBackgroundColor(monBG)
