@@ -1,3 +1,5 @@
 /Monitor.iml
 
 .vscode/
+
+src/settings.lua
